@@ -15,22 +15,23 @@
                 <a href="#strona-glowna">STRONA GŁÓWNA</a>
             </li>
             <li>
+                <a href="#lastminute">LAST MINUTE</a>
+                <ul class="submenu" style="left: 32.1%;">
+                    <li><a href="#lastminute">Hiszpania</a></li>
+                    <li><a href="#lastminute">Grecja</a></li>
+                    <li><a href="#lastminute">Turcja</a></li>
+                </ul>
+            </li>
+            <li>
                 <a href="#wakacje">WAKACJE</a>
-                <ul class="submenu" style="left: 45%;">
+                <ul class="submenu" style="left: 47.5%;">
                     <li><a href="#wakacje">All Inclusive</a></li>
                     <li><a href="#wakacje">Majówka</a></li>
                     <li><a href="#wakacje">City Break</a></li>
                     <li><a href="#wakacje">Bez Paszportu</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#lastminute">LAST MINUTE</a>
-                <ul class="submenu">
-                    <li><a href="#lastminute">Hiszpania</a></li>
-                    <li><a href="#lastminute">Grecja</a></li>
-                    <li><a href="#lastminute">Turcja</a></li>
-                </ul>
-            </li>
+            <li><a href="#zaplanuj">ZAPLANUJ SWOJĄ WYCIECZKĘ</a></li>
             <li><a href="#kontakt">KONTAKT</a></li>
         </ul>
     </nav>
@@ -106,7 +107,7 @@
                 </div>
                 <div class="oferta_wakacje"><h2>BEZ PASZPORTU</h2>
                     <img src="img/malta.jpg">
-                    <h3 style="margin-bottom: 10px; margin-left: 20px;">MALTA od 1599zł</h3>
+                    <h3 style="margin-bottom: 10px; margin-left: 20px;" id="zaplanuj">MALTA od 1599zł</h3>
                     <input type="checkbox" id="toggle4" class="oferta_wakacje-toggle">
                     <label for="toggle4" class="oferta_wakacje-title"></label>
                     <div class="oferta_wakacje-content" style="background-color: aqua;">
@@ -116,8 +117,48 @@
             </div>
         </div>
         <div class="formularz">
+            <h1 style="text-shadow: 4px 4px 6px aqua; padding-top: 100px;">Zaplanuj z nami swoją wycieczkę!</h1>
+            <form action="mailto:kontakt@przygodaexpress.com" method="post">
+                <div id="formularz_data-poczatkowa">
+                    <h3>Data Początkowa</h3>
+                    <input type="date" id="poczatek" name="data_poczatek" style="margin-left: 16.5%;">
+                </div>
+                <div id="formularz_data-koncowa">
+                    <h3>Data Końcowa</h3>
+                    <input type="date" id="koniec" name="data_koniec" style="margin-left: 12%;">
+                </div>
+                <div id="formularz_losob">
+                    <h3>Ilość Osób</h3>
+                    <div class="losob"><p>dorosłych</p> <input type="number" id="os_doroslych" name="os_doroslych"></div>
+                    <div class="losob"><p>dzieci</p> <input type="number" id="os_dzieci" name="os_dzieci" style="margin-left: 54px;"></div>
+                    </div>
+                <div id="formularz_oferta">
+                    <h3>Oferta</h3>
+                    <select>
+                        <option selected hidden disabled>oferta</option>
+                        <option value="HISZPANIA">HISZPANIA</option>
+                        <option value="GRECJA">GRECJA</option>
+                        <option value="TURCJA">TURCJA</option>
+                        <option value="EGIPT">EGIPT</option>
+                        <option value="PORTUGALIA">PORTUGALIA</option>
+                        <option value="MEDIOLAN">MEDIOLAN</option>
+                        <option value="MALTA">MALTA</option>
+                    </select>
+                </div>
+                <button type="submit" style="position: absolute; top: 1600px; left: 200px;">WYŚLIJ</button>
+            </form>
         </div>
-        <div class="kontakt"></div>
+        <div class="kontakt" id="kontakt">
+            <h1>KONTAKT</h1>
+            <div class="img-container">
+                <img src="icon/phone.svg">
+                <h2>+48 123 456 789</h2>
+                <img src="icon/gmail.svg">
+                <h2>kontakt@przygodaexpress.com</h2>
+                <img src="icon/facebook.svg">
+                <h2>Przygoda Express</h2>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; 2024 Przygoda Express. Wszelkie prawa zastrzeżone.</p>

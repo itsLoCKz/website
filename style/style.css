@@ -26,14 +26,14 @@ li {
     margin: 10px 20px;
 }
 
-a {
+nav a {
     color: lightblue;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-a::after {
+nav a::after {
     content: "";
     width: 0;
     height: 3px;
@@ -44,7 +44,7 @@ a::after {
     transition: 0.5s;
 }
 
-a:hover::after {
+nav a:hover::after {
     width: 100%;
 }
 
@@ -137,6 +137,8 @@ main {
     background-repeat: no-repeat;
 }
 
+/* Last Minute */
+
 #napis {
     margin: 50px auto 0;
     background-color: aqua;
@@ -188,14 +190,68 @@ main img{
     height: 180px;
 }
 
+/* Wakacje */
+
 .wakacje{
+    display: flex;
     clear: both;
     margin: auto;
     width: 97%;
-    height: 30vh;
+    height: 40vh;
     border-radius: 10px;
     background-color: aqua;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.oferta_wakacje{
+    margin: 20px auto;
+    float: left;
+}
+
+.wakacje img{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 150px;
+}
+
+.oferta_wakacje-toggle {
+    display: none;
+}
+
+.oferta_wakacje-title {
+    cursor: pointer;
+    padding: 50px;
+    font-weight: bold;
+}
+
+.oferta_wakacje-content {
+    display: none;
+    padding: 10px;
+    background-color: aqua;
+}
+
+.oferta_wakacje-toggle:checked + .oferta_wakacje-title::before {
+    content: "ZOBACZ MNIEJ ▲";
+}
+
+.oferta_wakacje-title::before {
+    content: "ZOBACZ WIĘCEJ ▼";
+}
+
+.oferta_wakacje-toggle:checked + .oferta_wakacje-title + .oferta_wakacje-content {
+    display: block;
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.oferta_wakacje-title:hover + .oferta_wakacje-content {
+    background-color: aqua;
+}
+
+label {
+    font-size: 10px;
 }
 
 /* Formularz */
@@ -218,5 +274,3 @@ footer{
     font-size: large;
     color: lightblue;
 }
-
-

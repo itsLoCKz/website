@@ -129,8 +129,8 @@
                 </div>
                 <div id="formularz_losob">
                     <h3>Ilość Osób</h3>
-                    <div class="losob"><p>dorosłych</p> <input type="number" id="os_doroslych" name="os_doroslych"></div>
-                    <div class="losob"><p>dzieci</p> <input type="number" id="os_dzieci" name="os_dzieci" style="margin-left: 54px;"></div>
+                    <div class="losob" style="position: relative; right: 90px; bottom: 20px;"><p>dorosłych</p> <input type="number" id="os_doroslych" name="os_doroslych" style="position: relative; bottom: 5px;"></div>
+                    <div class="losob" style="position: relative; right: 90px; bottom: 20px;"><p>dzieci</p> <input type="number" id="os_dzieci" name="os_dzieci" style="position: relative; margin-left: 54px; bottom: 5px;"></div>
                     </div>
                 <div id="formularz_oferta">
                     <h3>Oferta</h3>
@@ -145,7 +145,10 @@
                         <option value="MALTA">MALTA</option>
                     </select>
                 </div>
-                <button type="submit" style="position: absolute; top: 1600px; left: 200px;">WYŚLIJ</button>
+                <div id="newsletter" class="zgoda"><p style="top: 220vh;">Bądź na bieżąco z naszymi nowościami!</p><input type="checkbox" style="top: 220.6vh;"></div>
+                <div id="regulamin" class="zgoda"><p style="top: 224vh;">Akceptuję regulamin.</p><input type="checkbox" checked disabled style="top: 224.6vh;"></div>
+                <div id="dane" class="zgoda"><p style="top: 228vh;">Wyrażam zgodę na przetwarzanie danych osobowych</p><input type="checkbox" checked disabled style="top: 228.6vh;"></div>
+                <button type="submit" style="position: absolute; top: 225vh; right: 10%;">WYŚLIJ</button>
             </form>
         </div>
         <div class="kontakt" id="kontakt">

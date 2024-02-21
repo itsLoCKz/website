@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 /* Navigation */
 
 nav {
@@ -120,6 +125,7 @@ header img {
 }
 
 header h2 {
+    text-shadow: 0px 3px 22px navy;
     color: darkblue; 
     font-size: 20px;
 }
@@ -267,7 +273,7 @@ label {
 
 .formularz{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background-color: lightblue;
     box-shadow: 0 -34px 30px -30px aqua;
 }
@@ -283,21 +289,22 @@ label {
 
 .formularz form{
     margin: auto;
-    border: 1px solid black;
+    border: 5px outset aqua;
     padding-bottom: 20px;
     border-radius: 50px;
+    height: 40vh;
     width: 90%;
     font-size: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: start;
-    align-content: space-between;
 }
 
 .formularz div{
     float: left;
+    margin-left: 100px;
 }
 
 .formularz form h3{
@@ -306,6 +313,7 @@ label {
 
 .formularz form input{
     margin-left: 20px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 #formularz_losob{
@@ -332,6 +340,7 @@ label {
 }
 
 .formularz select{
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     width: 100px;
     height: 50px;
     text-align: center;
@@ -341,6 +350,10 @@ label {
     background-color: aqua;
     border-radius: 10px;
     color: navy;
+    border: none;
+}
+
+.formularz select option{
     border: none;
 }
 
@@ -355,6 +368,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 button{
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     height: 50px;
     width: 200px;
     border: none;
@@ -362,6 +376,20 @@ button{
     background-color: aqua;
     border-radius: 20px;
 }
+
+.zgoda p{
+    font-weight: bold;
+    position: absolute;
+    left: 15%;
+}
+
+.zgoda input{
+    position: absolute;
+    left: 12%;
+    width: 15px;
+    height: 15px;
+}
+
 
 /* Kontakt */
 
@@ -388,8 +416,8 @@ button{
 }
 
 .kontakt img{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
 }
 
 

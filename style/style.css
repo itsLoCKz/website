@@ -59,6 +59,7 @@ nav a:hover::after {
     display: none;
     position: absolute;
     background-color: navy;
+    border-radius: 10px;
     padding: 10px;
     left: 60%;
     transform: translateX(-50%);

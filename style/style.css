@@ -163,7 +163,7 @@ main {
     max-width: 1920px;
     margin: 0 auto;
     width: 75%;
-    height: 140vh;
+    height: 110vh;
     background-color: aqua;
     margin: auto;
     background-color: rgba(0, 255, 255, 0.3);
@@ -179,7 +179,7 @@ main {
     float: left;
     margin: 18.5px 18.5px 100px;
     width: 30%;
-    height: 60vh;
+    height: 40vh;
     background-color: aqua;
     border-radius: 10px;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
@@ -206,7 +206,7 @@ main {
     clear: both;
     margin: auto;
     width: 97%;
-    height: 40vh;
+    height: 32vh;
     border-radius: 10px;
     background-color: aqua;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
@@ -223,6 +223,7 @@ main {
     margin-bottom: 15px;
     width: 200px;
     height: 150px;
+    border-radius: 10px;
 }
 
 .oferta_wakacje-toggle {
@@ -373,8 +374,8 @@ button{
     height: 50px;
     width: 200px;
     border: none;
-    color: navy;
-    background-color: aqua;
+    color:aqua;
+    background-color: navy;
     border-radius: 20px;
 }
 
